@@ -1,65 +1,167 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Amit Rajbhar | Portfolio</title>
+  <title>Amit Rajbhar | Full-Stack Software Engineer</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root{--accent:#0d6efd;--muted:#6c757d;--success:#198754}
-    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: #f8fafc; color:#0f1724}
-    .navbar-brand strong{color:var(--accent)}
-    .hero{background:linear-gradient(135deg, rgba(13,110,253,0.08), rgba(9,132,255,0.02)); padding:80px 0}
-    .card-project{border:0; border-radius:12px; box-shadow:0 6px 18px rgba(15,23,36,0.06); transition: transform 0.3s ease, box-shadow 0.3s ease}
-    .card-project:hover{transform: translateY(-4px); box-shadow:0 12px 28px rgba(15,23,36,0.12)}
-    .tech-badge{font-size:12px; margin-right:6px; margin-bottom:6px}
-    .section-title{font-weight:700; margin-bottom:20px}
-    .resume-btn{background:linear-gradient(90deg,#06b6d4,#0ea5e9); color:#fff; border:0}
-    .resume-btn:hover{background:linear-gradient(90deg,#0891b2,#0284c7); color:#fff}
-    footer{padding:30px 0; font-size:14px; color:var(--muted)}
-    .nav-smooth{scroll-behavior:smooth}
-    .skill-category{background:#fff; border-radius:12px; padding:24px; margin-bottom:20px; box-shadow:0 4px 12px rgba(15,23,36,0.04)}
-    .skill-category h5{color:var(--accent); font-weight:600; margin-bottom:16px; font-size:18px}
-    .skill-item{display:inline-flex; align-items:center; background:#f8fafc; padding:8px 16px; border-radius:8px; margin:4px; font-size:14px; border:1px solid #e2e8f0}
-    .skill-item i{margin-right:8px; color:var(--accent)}
-    .contact-info-card{background:linear-gradient(135deg, #667eea 0%, #764ba2 100%); color:#fff; border-radius:12px; padding:30px}
-    .contact-info-card h5{color:#fff; font-weight:700}
-    .contact-info-card a{color:#fff; text-decoration:underline}
-    .form-control:focus{border-color:var(--accent); box-shadow:0 0 0 0.25rem rgba(13,110,253,0.15)}
-    .alert-success{display:none}
-    .timeline-item{position:relative; padding-left:40px; margin-bottom:30px}
-    .timeline-item::before{content:''; position:absolute; left:0; top:0; width:24px; height:24px; background:var(--accent); border-radius:50%; border:4px solid #f8fafc}
-    .timeline-item::after{content:''; position:absolute; left:11px; top:24px; width:2px; height:calc(100% + 6px); background:#e2e8f0}
-    .timeline-item:last-child::after{display:none}
-    .logo img{width:140px; height:140px; border-radius:50%; object-fit:cover;}
-    @media (max-width:576px){ 
-      .hero{padding:48px 0}
-      .skill-item{font-size:12px; padding:6px 12px}
+    :root {
+      --accent: #0d6efd;
+      --muted: #6c757d;
+      --success: #198754
     }
-    /* Navbar link hover and active background */
-    .navbar-nav .nav-link{
+
+    body {
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: #f8fafc;
+      color: #0f1724
+    }
+
+    .navbar-brand strong {
+      color: var(--accent)
+    }
+
+    .hero {
+      background: linear-gradient(135deg, rgba(13, 110, 253, 0.08), rgba(9, 132, 255, 0.02));
+      padding: 80px 0
+    }
+
+    .card-project {
+      border: 0;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(15, 23, 36, 0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease
+    }
+
+    .card-project:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(15, 23, 36, 0.12)
+    }
+
+    .tech-badge {
+      font-size: 12px;
+      margin-right: 6px;
+      margin-bottom: 6px
+    }
+
+    .section-title {
+      font-weight: 700;
+      margin-bottom: 20px
+    }
+
+    .resume-btn {
+      background: linear-gradient(90deg, #06b6d4, #0ea5e9);
+      color: #fff;
+      border: 0
+    }
+
+    .resume-btn:hover {
+      background: linear-gradient(90deg, #0891b2, #0284c7);
+      color: #fff
+    }
+
+    footer {
+      padding: 30px 0;
+      font-size: 14px;
+      color: var(--muted)
+    }
+
+    .nav-smooth {
+      scroll-behavior: smooth
+    }
+
+    .skill-category {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(15, 23, 36, 0.04)
+    }
+
+    .skill-category h5 {
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 16px;
+      font-size: 18px
+    }
+
+    .skill-item {
+      display: inline-flex;
+      align-items: center;
+      background: #f8fafc;
+      padding: 8px 16px;
+      border-radius: 8px;
+      margin: 4px;
+      font-size: 14px;
+      border: 1px solid #e2e8f0
+    }
+
+    .skill-item i {
+      margin-right: 8px;
+      color: var(--accent)
+    }
+
+    .contact-info-card {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      border-radius: 12px;
+      padding: 30px
+    }
+
+    .contact-info-card h5 {
+      color: #fff;
+      font-weight: 700
+    }
+
+    .contact-info-card a {
+      color: #fff;
+      text-decoration: underline
+    }
+
+    .form-control:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15)
+    }
+
+    .alert-success {
+      display: none
+    }
+
+    .logo img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover
+    }
+
+    .navbar-nav .nav-link {
       transition: background-color 0.18s ease, color 0.18s ease;
-      border-radius:8px;
+      border-radius: 8px
     }
+
     .navbar-nav .nav-link:hover,
-    .navbar-nav .nav-link:focus{
-      background-color: rgba(13,110,253,0.08); /* subtle blue */
+    .navbar-nav .nav-link:focus {
+      background-color: rgba(13, 110, 253, 0.08);
       color: var(--accent) !important;
-      text-decoration: none;
+      text-decoration: none
     }
-    .navbar-nav .nav-link.active{
-      background-color: rgba(13,110,253,0.12);
-      color: var(--accent) !important;
+
+    .navbar-nav .nav-link.active {
+      background-color: rgba(13, 110, 253, 0.12);
+      color: var(--accent) !important
     }
-    /* Typewriter styles */
+
     .typewriter {
       display: inline-block;
       white-space: nowrap;
       overflow: hidden;
-      vertical-align: bottom;
+      vertical-align: bottom
     }
+
     .typewriter-cursor {
       display: inline-block;
       width: 1ch;
@@ -67,1061 +169,1026 @@
       background: transparent;
       color: var(--accent);
       animation: blink 1s steps(2, start) infinite;
-      font-weight: 700;
+      font-weight: 700
     }
+
     @keyframes blink {
-      50% { opacity: 0 }
+      50% {
+        opacity: 0
+      }
+    }
+
+    .stat-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(15, 23, 36, 0.04);
+      border-top: 3px solid var(--accent)
+    }
+
+    .stat-card h3 {
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 4px
+    }
+
+    .exp-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(15, 23, 36, 0.04);
+      border-left: 4px solid var(--accent)
+    }
+
+    .exp-card.past {
+      border-left-color: #6c757d
+    }
+
+    .cert-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #f0f7ff;
+      border: 1px solid #c7dffb;
+      border-radius: 8px;
+      padding: 10px 16px;
+      margin-bottom: 10px;
+      width: 100%
+    }
+
+    .cert-badge i {
+      color: var(--accent)
+    }
+
+    @media(max-width:576px) {
+      .hero {
+        padding: 48px 0
+      }
+
+      .skill-item {
+        font-size: 12px;
+        padding: 6px 12px
+      }
     }
   </style>
 </head>
+
 <body class="nav-smooth">
 
-<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
-  <div class="container">
-    <a class="navbar-brand" href="#home"><strong>Amit</strong> Rajbhar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navmenu">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        <!-- <li class="nav-item"><a class="nav-link" href="game.html">Game</a></li> -->
-        <!-- <li class="nav-item"><a class="nav-link" href="saicracker.html">Sai Cracker</a></li> -->
-        <li class="nav-item ms-2 mt-2"><a class="btn resume-btn btn-sm" href="./amit_rajbhar_4yrs.pdf" target="_blank"><i class="fa-regular fa-file-lines"></i> Resume</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<header id="home" class="hero">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-7">
-  <h1 class="display-5 fw-bold">Hi — I'm <span id="typewriter" class="text-primary typewriter" aria-live="polite"></span><span class="typewriter-cursor">|</span></h1>
-        <p class="lead text-muted">Full-stack developer with a love for clean UI, realtime systems and reliable backends. I build web apps using Laravel, Node.js, Vue/Nuxt and React — and deploy them on Ubuntu & AWS.</p>
-
-        <div class="d-flex gap-2 mt-4 flex-wrap">
-          <a href="#projects" class="btn btn-primary btn-lg">See Projects</a>
-          <a href="#contact" class="btn btn-outline-secondary btn-lg">Contact Me</a>
-        </div>
-
-        <div class="mt-4">
-          <small class="text-muted">Core skills:</small>
-          <div class="mt-2">
-            <span class="badge bg-primary tech-badge">HTML/CSS</span>
-            <span class="badge bg-primary tech-badge">Bootstrap</span>
-            <span class="badge bg-primary tech-badge">Vue / Nuxt</span>
-            <span class="badge bg-primary tech-badge">React</span>
-            <span class="badge bg-primary tech-badge">Laravel</span>
-            <span class="badge bg-primary tech-badge">Node / Express</span>
-            <span class="badge bg-primary tech-badge">Stripe</span>
-            <span class="badge bg-primary tech-badge">Socket.io</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-5 text-center mt-4 mt-lg-0">
-        <div class="card p-3" style="border-radius:14px; background:linear-gradient(180deg,#fff,#f8fbff); box-shadow:0 10px 30px rgba(13,110,253,0.06)">
-          <div class="logo">
-            <img src="./logo.png" alt="">
-          </div>
-          <div class="card-body text-center">
-            <h5 class="card-title mb-1">Amit Rajbhar</h5>
-            <p class="text-muted small mb-2">Full-stack Developer • Laravel • Node • Express • CodeIgniter • Vue • React </p>
-            <div class="d-flex justify-content-center gap-2">
-              <a class="btn btn-sm btn-outline-primary" href="#projects">Projects</a>
-              <a class="btn btn-sm btn-outline-secondary" href="https://github.com/Amitrajbhargithub" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</header>
-
-<!-- ABOUT -->
-<section id="about" class="py-5">
-  <div class="container">
-    <h2 class="section-title text-center mb-5">About Me</h2>
-    
-    <div class="row gy-4">
-      <div class="col-lg-8">
-        <div class="bg-white p-4 rounded-3 shadow-sm mb-4">
-          <h4 class="mb-3">Who I Am</h4>
-          <p class="mb-3">I'm a passionate full-stack web developer who loves building performant, maintainable applications that solve real problems. With expertise in both frontend and backend technologies, I create seamless user experiences backed by robust server architectures.</p>
-          
-          <p class="mb-3">My journey in web development has led me to specialize in:</p>
-          <ul class="mb-3">
-            <li><strong>Modern Web Applications:</strong> Building responsive, interactive interfaces with Vue.js, Nuxt.js, and React</li>
-            <li><strong>Backend Development:</strong> Creating scalable APIs and services using Laravel, Node.js, and Express</li>
-            <li><strong>Realtime Systems:</strong> Implementing chat applications, video conferencing, and live updates using Socket.io, WebRTC, and Agora</li>
-            <li><strong>E-commerce Solutions:</strong> Developing shopping platforms with Shopify and custom integrations</li>
-            <li><strong>Payment Integration:</strong> Seamless Stripe integration for subscriptions and one-time payments</li>
-          </ul>
-
-          <p>I believe in writing clean, maintainable code and staying current with industry best practices. Whether it's optimizing database queries, implementing caching strategies, or creating intuitive user interfaces, I approach each project with attention to detail and a focus on quality.</p>
-        </div>
-
-        <div class="bg-white p-4 rounded-3 shadow-sm">
-          <h4 class="mb-3">Experience & Expertise</h4>
-          
-          <div class="timeline-item">
-            <h6 class="fw-bold mb-1">Full-stack Web Development</h6>
-            <p class="text-muted small mb-2">Building complete web applications from concept to deployment</p>
-            <p class="mb-0">Experienced in developing everything from simple landing pages to complex SaaS platforms with subscription billing, user management, and analytics dashboards.</p>
-          </div>
-
-          <div class="timeline-item">
-            <h6 class="fw-bold mb-1">E-commerce Development</h6>
-            <p class="text-muted small mb-2">Custom online stores and Shopify solutions</p>
-            <p class="mb-0">Built headless e-commerce platforms, custom Shopify themes, and integrated payment gateways for seamless checkout experiences.</p>
-          </div>
-
-          <div class="timeline-item">
-            <h6 class="fw-bold mb-1">Realtime Applications</h6>
-            <p class="text-muted small mb-2">Chat systems, video conferencing, and live notifications</p>
-            <p class="mb-0">Developed realtime communication platforms using WebSocket technologies, implementing features like group chats, video calls, and push notifications.</p>
-          </div>
-
-          <div class="timeline-item">
-            <h6 class="fw-bold mb-1">Cloud Deployment & DevOps</h6>
-            <p class="text-muted small mb-2">Ubuntu, AWS, cPanel, and SiteGround hosting</p>
-            <p class="mb-0">Proficient in deploying and maintaining applications across various hosting platforms, configuring servers, and implementing CI/CD pipelines.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4">
-        <div class="bg-white p-4 rounded-3 shadow-sm mb-4">
-          <h5 class="mb-3"><i class="fas fa-code text-primary me-2"></i>Tech Stack</h5>
-          <p class="mb-2"><strong>Frontend:</strong></p>
-          <p class="text-muted small">HTML5, CSS3, JavaScript (ES6+), Bootstrap, Tailwind CSS, Vue.js, Nuxt.js, React</p>
-          
-          <p class="mb-2 mt-3"><strong>Backend:</strong></p>
-          <p class="text-muted small">PHP (Laravel, CodeIgniter), Node.js, Express.js, Python</p>
-          
-          <p class="mb-2 mt-3"><strong>Databases:</strong></p>
-          <p class="text-muted small">MySQL, MongoDB, PostgreSQL</p>
-          
-          <p class="mb-2 mt-3"><strong>Tools & Platforms:</strong></p>
-          <p class="text-muted small">Git, GitHub, Bitbucket, Docker, Composer, npm, Webpack</p>
-        </div>
-
-        <div class="bg-white p-4 rounded-3 shadow-sm mb-4">
-          <h5 class="mb-3"><i class="fas fa-chart-line text-primary me-2"></i>Quick Stats</h5>
-          <div class="mb-3 pb-3 border-bottom">
-            <div class="d-flex justify-content-between mb-1">
-              <span class="small">Projects Completed</span>
-              <strong>25+</strong>
-            </div>
-          </div>
-          <!-- <div class="mb-3 pb-3 border-bottom">
-            <div class="d-flex justify-content-between mb-1">
-              <span class="small">Happy Clients</span>
-              <strong>30+</strong>
-            </div>
-          </div> -->
-          <div class="mb-3 pb-3 border-bottom">
-            <div class="d-flex justify-content-between mb-1">
-              <span class="small">Technologies Mastered</span>
-              <strong>7+</strong>
-            </div>
-          </div>
-          <div>
-            <div class="d-flex justify-content-between mb-1">
-              <span class="small">Years Experience</span>
-              <strong>3+</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-white p-4 rounded-3 shadow-sm">
-          <h5 class="mb-3"><i class="fas fa-certificate text-primary me-2"></i>Certifications</h5>
-          <p class="small text-muted mb-2">• AWS Certified Developer</p>
-          <p class="small text-muted mb-2">• MongoDB Certified Developer</p>
-          <p class="small text-muted mb-0">• Laravel Certified Developer</p>
-        </div>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#home"><strong>Amit</strong> Rajbhar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-2 mt-2"><a class="btn resume-btn btn-sm" href="./amit_rajbhar_4yrs.pdf"
+              target="_blank"><i class="fa-regular fa-file-lines me-1"></i> Resume</a></li>
+        </ul>
       </div>
     </div>
-  </div>
-</section>
+  </nav>
 
-<!-- SKILLS SECTION -->
-<section id="skills" class="py-2 bg-light">
-  <div class="container">
-    <h2 class="section-title text-center mb-5">Technical Skills</h2>
-    
-    <div class="row">
-      <div class="col-lg-6 mb-4">
-        <div class="skill-category">
-          <h5><i class="fas fa-palette me-2"></i>Frontend Development</h5>
-          <div>
-            <span class="skill-item"><i class="fab fa-html5"></i> HTML5</span>
-            <span class="skill-item"><i class="fab fa-css3-alt"></i> CSS3</span>
-            <span class="skill-item"><i class="fab fa-js"></i> JavaScript (ES6+)</span>
-            <span class="skill-item"><i class="fab fa-bootstrap"></i> Bootstrap</span>
-            <span class="skill-item"><i class="fas fa-wind"></i> Tailwind CSS</span>
-            <span class="skill-item"><i class="fab fa-vuejs"></i> Vue.js</span>
-            <span class="skill-item"><i class="fab fa-vuejs"></i> Nuxt.js</span>
-            <span class="skill-item"><i class="fab fa-react"></i> React</span>
-            <span class="skill-item"><i class="fas fa-mobile-alt"></i> Responsive Design</span>
+  <!-- HERO -->
+  <header id="home" class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="display-5 fw-bold">Hi — I'm <span id="typewriter" class="text-primary typewriter"
+              aria-live="polite"></span><span class="typewriter-cursor">|</span></h1>
+          <p class="lead text-muted">Full-Stack Software Engineer with 4+ years building AI-integrated platforms,
+            real-time systems, and cross-platform mobile apps. I specialize in Laravel, Node.js, Vue/Nuxt, React and
+            deploy on AWS with CI/CD pipelines.</p>
+          <div class="d-flex gap-2 mt-4 flex-wrap">
+            <a href="#projects" class="btn btn-primary btn-lg">See Projects</a>
+            <a href="#contact" class="btn btn-outline-secondary btn-lg">Contact Me</a>
           </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6 mb-4">
-        <div class="skill-category">
-          <h5><i class="fas fa-server me-2"></i>Backend Development</h5>
-          <div>
-            <span class="skill-item"><i class="fab fa-php"></i> PHP</span>
-            <span class="skill-item"><i class="fab fa-laravel"></i> Laravel</span>
-            <span class="skill-item"><i class="fas fa-fire"></i> CodeIgniter</span>
-            <span class="skill-item"><i class="fab fa-node-js"></i> Node.js</span>
-            <span class="skill-item"><i class="fas fa-project-diagram"></i> Express.js</span>
-            <span class="skill-item"><i class="fab fa-python"></i> Python</span>
-            <span class="skill-item"><i class="fas fa-code"></i> RESTful APIs</span>
-            <span class="skill-item"><i class="fas fa-lock"></i> Authentication & Authorization</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6 mb-4">
-        <div class="skill-category">
-          <h5><i class="fas fa-database me-2"></i>Database & Storage</h5>
-          <div>
-            <span class="skill-item"><i class="fas fa-database"></i> MySQL</span>
-            <span class="skill-item"><i class="fas fa-leaf"></i> MongoDB</span>
-            <span class="skill-item"><i class="fas fa-elephant"></i> PostgreSQL</span>
-            <span class="skill-item"><i class="fas fa-chart-line"></i> Database Optimization</span>
-            <span class="skill-item"><i class="fas fa-sync"></i> Redis Caching</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6 mb-4">
-        <div class="skill-category">
-          <h5><i class="fas fa-comments me-2"></i>Realtime & Communication</h5>
-          <div>
-            <span class="skill-item"><i class="fas fa-plug"></i> Socket.io</span>
-            <span class="skill-item"><i class="fas fa-video"></i> WebRTC</span>
-            <span class="skill-item"><i class="fas fa-broadcast-tower"></i> Agora</span>
-            <span class="skill-item"><i class="fas fa-bell"></i> OneSignal</span>
-            <span class="skill-item"><i class="fab fa-google"></i> Firebase</span>
-            <span class="skill-item"><i class="fas fa-comment-dots"></i> Live Chat</span>
-            <span class="skill-item"><i class="fas fa-users"></i> Video Conferencing</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6 mb-4">
-        <div class="skill-category">
-          <h5><i class="fas fa-shopping-cart me-2"></i>E-commerce & CMS</h5>
-          <div>
-            <span class="skill-item"><i class="fab fa-shopify"></i> Shopify</span>
-            <span class="skill-item"><i class="fab fa-wordpress"></i> WordPress</span>
-            <span class="skill-item"><i class="fab fa-stripe"></i> Stripe Integration</span>
-            <span class="skill-item"><i class="fas fa-credit-card"></i> Payment Gateways</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-6 mb-4">
-        <div class="skill-category">
-          <h5><i class="fas fa-cloud me-2"></i>Deployment & DevOps</h5>
-          <div>
-            <span class="skill-item"><i class="fab fa-ubuntu"></i> Ubuntu Server</span>
-            <span class="skill-item"><i class="fab fa-aws"></i> AWS (EC2, S3, RDS)</span>
-            <span class="skill-item"><i class="fas fa-server"></i> cPanel</span>
-            <span class="skill-item"><i class="fas fa-globe"></i> SiteGround</span>
-            <span class="skill-item"><i class="fab fa-docker"></i> Docker</span>
-            <span class="skill-item"><i class="fab fa-github"></i> GitHub</span>
-            <span class="skill-item"><i class="fab fa-bitbucket"></i> Bitbucket</span>
-            <span class="skill-item"><i class="fas fa-infinity"></i> CI/CD</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="text-center mt-4">
-      <p class="text-muted">Always learning and expanding my skillset to stay current with the latest technologies and best practices.</p>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE SECTION -->
-<section id="experience" class="py-5">
-  <div class="container">
-    <h2 class="section-title text-center mb-4">Professional Experience</h2>
-    <p class="text-muted text-center mb-5">My journey through various organizations, building scalable web solutions</p>
-    
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-        
-        <!-- Experience 1 -->
-        <div class="bg-white p-4 rounded-3 shadow-sm mb-4 position-relative" style="border-left: 4px solid #0d6efd">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <h5 class="mb-1 fw-bold">Software Engineer</h5>
-              <h6 class="text-primary mb-2">Jamtech Technology Pvt Ltd</h6>
-              <p class="text-muted mb-3">
-                <i class="fas fa-calendar-alt me-2"></i>July 2024 - Present
-                <span class="ms-3"><i class="fas fa-clock me-2"></i>1+ years</span>
-              </p>
-              <ul class="mb-0">
-                <li>Developing and maintaining full-stack web applications using Laravel, Vue.js, and React</li>
-                <li>Implementing realtime features with Socket.io and WebRTC for communication platforms</li>
-                <li>Integrating payment gateways (Stripe) and managing subscription-based systems</li>
-                <li>Optimizing application performance and database queries for scalability</li>
-                <li>Collaborating with cross-functional teams using Git and Agile methodologies</li>
-              </ul>
+          <div class="mt-4">
+            <small class="text-muted">Core skills:</small>
+            <div class="mt-2">
+              <span class="badge bg-primary tech-badge">Laravel</span>
+              <span class="badge bg-primary tech-badge">Node.js / NestJS</span>
+              <span class="badge bg-primary tech-badge">Vue / Nuxt</span>
+              <span class="badge bg-primary tech-badge">React / Next</span>
+              <span class="badge bg-primary tech-badge">TypeScript</span>
+              <span class="badge bg-primary tech-badge">Socket.io</span>
+              <span class="badge bg-primary tech-badge">AWS</span>
+              <span class="badge bg-primary tech-badge">Docker</span>
             </div>
-            <div class="col-md-4 text-center mt-3 mt-md-0">
-              <div class="bg-light rounded-3 p-3">
-                <i class="fas fa-briefcase fa-3x text-primary mb-2"></i>
-                <p class="small text-muted mb-0">Current Position</p>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center mt-4 mt-lg-0">
+          <div class="card p-3"
+            style="border-radius:14px;background:linear-gradient(180deg,#fff,#f8fbff);box-shadow:0 10px 30px rgba(13,110,253,0.06)">
+            <div class="logo mx-auto">
+              <img src="./logo.png" alt="Amit Rajbhar">
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title mb-1">Amit Rajbhar</h5>
+              <p class="text-muted small mb-2">Full-Stack Software Engineer · 4+ Years</p>
+              <p class="text-muted small mb-3">Laravel · Node.js · Vue · React · AWS</p>
+              <div class="d-flex justify-content-center gap-2">
+                <a class="btn btn-sm btn-outline-primary" href="#projects">Projects</a>
+                <a class="btn btn-sm btn-outline-secondary" href="https://github.com/Amitrajbhargithub"
+                  target="_blank"><i class="fab fa-github"></i> GitHub</a>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </header>
 
-        <!-- Experience 2 -->
-        <div class="bg-white p-4 rounded-3 shadow-sm mb-4 position-relative" style="border-left: 4px solid #6c757d">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <h5 class="mb-1 fw-bold">Software Engineer</h5>
-              <h6 class="text-primary mb-2">Ekana Technology</h6>
-              <p class="text-muted mb-3">
-                <i class="fas fa-calendar-alt me-2"></i>September 2023 - July 2024
-                <span class="ms-3"><i class="fas fa-clock me-2"></i>10 months</span>
-              </p>
-              <ul class="mb-0">
-                <li>Built responsive web applications using modern JavaScript frameworks (Vue, Nuxt)</li>
-                <li>Developed RESTful APIs with Laravel and Node.js/Express</li>
-                <li>Implemented e-commerce solutions with Shopify and custom integrations</li>
-                <li>Managed deployment on Ubuntu servers, AWS, and cPanel hosting</li>
-                <li>Integrated push notifications using OneSignal and Firebase</li>
-              </ul>
-            </div>
-            <div class="col-md-4 text-center mt-3 mt-md-0">
-              <div class="bg-light rounded-3 p-3">
-                <i class="fas fa-code fa-3x text-secondary mb-2"></i>
-                <p class="small text-muted mb-0">Previous Role</p>
-              </div>
-            </div>
+  <!-- ABOUT -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">About Me</h2>
+      <div class="row gy-4">
+        <div class="col-lg-8">
+          <div class="bg-white p-4 rounded-3 shadow-sm mb-4">
+            <h4 class="mb-3">Who I Am</h4>
+            <p class="mb-3">I'm a versatile Full-Stack Software Engineer with 4+ years of experience designing,
+              developing, and deploying production-grade web applications and mobile apps. I've built AI-integrated
+              platforms serving 2,000+ active users, real-time communication systems handling 500+ concurrent WebSocket
+              connections, and cross-platform mobile apps for iOS & Android.</p>
+            <p class="mb-3">I specialize in:</p>
+            <ul class="mb-3">
+              <li><strong>AI-Powered Platforms:</strong> Integrating fal.ai, Gemini Flash, Nano Banana, and OpenAI into
+                production applications for text-to-image, text-to-video, and generative content workflows</li>
+              <li><strong>Full-Stack Development:</strong> End-to-end delivery using Laravel, Node.js/NestJS,
+                Vue.js/Nuxt.js, and React.js/Next.js</li>
+              <li><strong>Real-Time Systems:</strong> Chat, video conferencing, and live notifications using Socket.io,
+                WebRTC, and Agora RTC — with 500+ concurrent connection support</li>
+              <li><strong>Mobile Apps:</strong> Cross-platform iOS & Android apps using Ionic, Capacitor, and React
+                Native from a single codebase</li>
+              <li><strong>Cloud & DevOps:</strong> CI/CD pipelines, Docker containers, and AWS (EC2, ELB, S3)
+                deployments with zero-downtime rollouts</li>
+            </ul>
+            <p>I believe in clean, maintainable code, thorough code reviews, and mentoring teammates to raise the
+              quality bar. Whether it's architecting an HLD/LLD, optimizing database queries, or shipping a PWA — I own
+              the problem end-to-end.</p>
           </div>
         </div>
 
-        <!-- Experience 3 -->
-        <div class="bg-white p-4 rounded-3 shadow-sm mb-4 position-relative" style="border-left: 4px solid #6c757d">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <h5 class="mb-1 fw-bold">Junior Web Developer</h5>
-              <h6 class="text-primary mb-2">Hipster Pvt Ltd</h6>
-              <p class="text-muted mb-3">
-                <i class="fas fa-calendar-alt me-2"></i>April 2022 - September 2023
-                <span class="ms-3"><i class="fas fa-clock me-2"></i>1 year 5 months</span>
-              </p>
-              <ul class="mb-0">
-                <li>Developed dynamic websites using PHP (Laravel, CodeIgniter) and MySQL</li>
-                <li>Created responsive frontend interfaces with HTML, CSS, Bootstrap</li>
-                <li>Worked on WordPress custom theme development and plugin customization</li>
-                <li>Collaborated with design teams to implement pixel-perfect UI/UX</li>
-                <li>Maintained and optimized existing web applications</li>
-              </ul>
-            </div>
-            <div class="col-md-4 text-center mt-3 mt-md-0">
-              <div class="bg-light rounded-3 p-3">
-                <i class="fas fa-laptop-code fa-3x text-secondary mb-2"></i>
-                <p class="small text-muted mb-0">Growth Phase</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Experience 4 -->
-        <div class="bg-white p-4 rounded-3 shadow-sm mb-4 position-relative" style="border-left: 4px solid #6c757d">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <h5 class="mb-1 fw-bold">Web Development Intern</h5>
-              <h6 class="text-primary mb-2">Xipe Tech</h6>
-              <p class="text-muted mb-3">
-                <i class="fas fa-calendar-alt me-2"></i>January 2022 - April 2022
-                <span class="ms-3"><i class="fas fa-clock me-2"></i>4 months</span>
-              </p>
-              <ul class="mb-0">
-                <li>Learned fundamentals of web development with HTML, CSS, JavaScript</li>
-                <li>Assisted in building basic web applications and landing pages</li>
-                <li>Gained experience with PHP and MySQL database management</li>
-                <li>Participated in code reviews and team collaboration sessions</li>
-                <li>Developed problem-solving skills through real-world projects</li>
-              </ul>
-            </div>
-            <div class="col-md-4 text-center mt-3 mt-md-0">
-              <div class="bg-light rounded-3 p-3">
-                <i class="fas fa-graduation-cap fa-3x text-secondary mb-2"></i>
-                <p class="small text-muted mb-0">Started Journey</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Career Summary -->
-        <div class="mt-5 p-4 rounded-3" style="background: linear-gradient(135deg, rgba(13,110,253,0.05), rgba(9,132,255,0.02))">
-          <h5 class="mb-3"><i class="fas fa-chart-line text-primary me-2"></i>Career Highlights</h5>
-          <div class="row">
-            <div class="col-md-3 col-sm-6 mb-3">
-              <div class="text-center">
-                <h3 class="text-primary mb-1">3+</h3>
+        <div class="col-lg-4">
+          <!-- Stats -->
+          <div class="row g-3 mb-4">
+            <div class="col-6">
+              <div class="stat-card">
+                <h3>4+</h3>
                 <p class="text-muted small mb-0">Years Experience</p>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6 mb-3">
-              <div class="text-center">
-                <h3 class="text-primary mb-1">3</h3>
-                <p class="text-muted small mb-0">Companies</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 mb-3">
-              <div class="text-center">
-                <h3 class="text-primary mb-1">25+</h3>
+            <div class="col-6">
+              <div class="stat-card">
+                <h3>25+</h3>
                 <p class="text-muted small mb-0">Projects Delivered</p>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6 mb-3">
-              <div class="text-center">
-                <h3 class="text-primary mb-1">7+</h3>
-                <p class="text-muted small mb-0">Technologies Used</p>
+            <div class="col-6">
+              <div class="stat-card">
+                <h3>2K+</h3>
+                <p class="text-muted small mb-0">Active Users Served</p>
               </div>
             </div>
+            <div class="col-6">
+              <div class="stat-card">
+                <h3>500+</h3>
+                <p class="text-muted small mb-0">Concurrent WS Conns</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications -->
+          <div class="bg-white p-4 rounded-3 shadow-sm">
+            <h5 class="mb-3"><i class="fas fa-certificate text-primary me-2"></i>Certifications</h5>
+            <div class="cert-badge">
+              <i class="fab fa-aws"></i>
+              <div>
+                <div class="small fw-semibold">AWS Cloud Practitioner</div>
+                <div class="text-muted" style="font-size:11px">In progress — expected 2026</div>
+              </div>
+            </div>
+            <div class="cert-badge">
+              <i class="fab fa-docker"></i>
+              <div>
+                <div class="small fw-semibold">Docker Essentials</div>
+                <div class="text-muted" style="font-size:11px">IBM / Coursera · 2024</div>
+              </div>
+            </div>
+            <div class="cert-badge">
+              <i class="fab fa-js"></i>
+              <div>
+                <div class="small fw-semibold">JS Algorithms & Data Structures</div>
+                <div class="text-muted" style="font-size:11px">freeCodeCamp · 2023</div>
+              </div>
+            </div>
+            <div class="cert-badge">
+              <i class="fab fa-python"></i>
+              <div>
+                <div class="small fw-semibold">Python with Django</div>
+                <div class="text-muted" style="font-size:11px">Techpile Technology · 2023</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Technical Skills</h2>
+      <div class="row">
+
+        <div class="col-lg-6 mb-4">
+          <div class="skill-category">
+            <h5><i class="fas fa-palette me-2"></i>Frontend Development</h5>
+            <span class="skill-item"><i class="fab fa-html5"></i>HTML5</span>
+            <span class="skill-item"><i class="fab fa-css3-alt"></i>CSS3</span>
+            <span class="skill-item"><i class="fab fa-js"></i>JavaScript (ES6+)</span>
+            <span class="skill-item"><i class="fas fa-code"></i>TypeScript</span>
+            <span class="skill-item"><i class="fab fa-bootstrap"></i>Bootstrap</span>
+            <span class="skill-item"><i class="fab fa-vuejs"></i>Vue.js</span>
+            <span class="skill-item"><i class="fab fa-vuejs"></i>Nuxt.js</span>
+            <span class="skill-item"><i class="fab fa-react"></i>React.js</span>
+            <span class="skill-item"><i class="fab fa-react"></i>Next.js</span>
+            <span class="skill-item"><i class="fas fa-mountain"></i>Alpine.js</span>
+            <span class="skill-item"><i class="fas fa-mobile-alt"></i>Responsive Design / PWA</span>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div class="skill-category">
+            <h5><i class="fas fa-server me-2"></i>Backend Development</h5>
+            <span class="skill-item"><i class="fab fa-php"></i>PHP</span>
+            <span class="skill-item"><i class="fab fa-laravel"></i>Laravel</span>
+            <span class="skill-item"><i class="fas fa-fire"></i>CodeIgniter</span>
+            <span class="skill-item"><i class="fab fa-node-js"></i>Node.js</span>
+            <span class="skill-item"><i class="fas fa-project-diagram"></i>NestJS</span>
+            <span class="skill-item"><i class="fas fa-code"></i>RESTful APIs</span>
+            <span class="skill-item"><i class="fas fa-project-diagram"></i>GraphQL</span>
+            <span class="skill-item"><i class="fas fa-cubes"></i>Microservices</span>
+            <span class="skill-item"><i class="fas fa-sitemap"></i>HLD / LLD</span>
+            <span class="skill-item"><i class="fas fa-lock"></i>Authentication & Authorization</span>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div class="skill-category">
+            <h5><i class="fas fa-mobile-alt me-2"></i>Mobile Development</h5>
+            <span class="skill-item"><i class="fas fa-bolt"></i>Ionic Framework</span>
+            <span class="skill-item"><i class="fas fa-plug"></i>Capacitor</span>
+            <span class="skill-item"><i class="fab fa-react"></i>React Native</span>
+            <span class="skill-item"><i class="fab fa-apple"></i>iOS Native Builds</span>
+            <span class="skill-item"><i class="fab fa-android"></i>Android Native Builds</span>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div class="skill-category">
+            <h5><i class="fas fa-database me-2"></i>Databases & Storage</h5>
+            <span class="skill-item"><i class="fas fa-database"></i>MySQL</span>
+            <span class="skill-item"><i class="fas fa-elephant"></i>PostgreSQL</span>
+            <span class="skill-item"><i class="fas fa-leaf"></i>MongoDB</span>
+            <span class="skill-item"><i class="fas fa-memory"></i>Redis</span>
+            <span class="skill-item"><i class="fab fa-google"></i>Firebase Realtime DB</span>
+            <span class="skill-item"><i class="fab fa-google"></i>Firestore</span>
+            <span class="skill-item"><i class="fas fa-chart-line"></i>Query Optimization</span>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div class="skill-category">
+            <h5><i class="fas fa-comments me-2"></i>Real-Time & AI Services</h5>
+            <span class="skill-item"><i class="fas fa-plug"></i>Socket.io</span>
+            <span class="skill-item"><i class="fas fa-video"></i>WebRTC</span>
+            <span class="skill-item"><i class="fas fa-broadcast-tower"></i>Agora RTC</span>
+            <span class="skill-item"><i class="fas fa-bell"></i>OneSignal</span>
+            <span class="skill-item"><i class="fas fa-robot"></i>fal.ai</span>
+            <span class="skill-item"><i class="fas fa-robot"></i>Gemini Flash</span>
+            <span class="skill-item"><i class="fas fa-robot"></i>OpenAI</span>
+            <span class="skill-item"><i class="fas fa-credit-card"></i>Stripe / Razorpay</span>
+          </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+          <div class="skill-category">
+            <h5><i class="fas fa-cloud me-2"></i>Cloud, DevOps & Testing</h5>
+            <span class="skill-item"><i class="fab fa-aws"></i>AWS (EC2, ELB, S3)</span>
+            <span class="skill-item"><i class="fab fa-docker"></i>Docker</span>
+            <span class="skill-item"><i class="fas fa-infinity"></i>CI/CD (GitHub Actions)</span>
+            <span class="skill-item"><i class="fab fa-github"></i>GitHub / Bitbucket</span>
+            <span class="skill-item"><i class="fab fa-ubuntu"></i>Ubuntu Server</span>
+            <span class="skill-item"><i class="fas fa-vial"></i>PHPUnit</span>
+            <span class="skill-item"><i class="fas fa-vial"></i>Jest</span>
+            <span class="skill-item"><i class="fas fa-code-branch"></i>Code Review</span>
+            <span class="skill-item"><i class="fas fa-users"></i>Agile / Scrum</span>
           </div>
         </div>
 
       </div>
+      <div class="text-center mt-2">
+        <p class="text-muted"><strong>Currently Exploring:</strong> Python · FastAPI · Django · Kubernetes · GenAI</p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- EDUCATION SECTION -->
-<section id="education" class="py-2 bg-light">
-  <div class="container">
-    <h2 class="section-title text-center mb-4">Education</h2>
-    <p class="text-muted text-center mb-5">My academic journey and qualifications</p>
-    
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-        
-        <div class="row g-4">
-          
-          <!-- BTech -->
-          <div class="col-md-6">
-            <div class="bg-white p-4 rounded-3 shadow-sm h-100" style="border-top: 4px solid #0d6efd">
-              <div class="d-flex align-items-start mb-3">
-                <div class="bg-primary bg-opacity-10 rounded-circle p-3 me-3">
-                  <i class="fas fa-graduation-cap fa-2x text-primary"></i>
-                </div>
-                <div class="flex-grow-1">
-                  <h5 class="mb-1 fw-bold">Bachelor of Technology (B.Tech)</h5>
-                  <p class="text-muted mb-2">Computer Science & Engineering</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <span class="badge bg-primary">2021 - 2025</span>
-                    <span class="badge bg-success">CGPA: 7.9/10</span>
+  <!-- EXPERIENCE -->
+  <section id="experience" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-2">Professional Experience</h2>
+      <p class="text-muted text-center mb-5">4+ years building scalable, production-grade systems across AI, real-time,
+        and e-commerce domains</p>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+
+          <!-- Jamtech -->
+          <div class="exp-card">
+            <div class="row align-items-start">
+              <div class="col-md-8">
+                <h5 class="mb-1 fw-bold">Software Engineer</h5>
+                <h6 class="text-primary mb-2">Jamtech Technologies Pvt. Ltd., Lucknow</h6>
+                <p class="text-muted mb-3"><i class="fas fa-calendar-alt me-2"></i>July 2024 – Present &nbsp;·&nbsp;
+                  <span class="badge bg-success">Current</span></p>
+                <ul class="mb-0">
+                  <li>Architected and led full-stack development of 3 AI-powered creative platforms — Rendermind,
+                    Storyboards, and Animatic Media — integrating fal.ai, Gemini Flash, and Nano Banana, serving
+                    <strong>2,000+ active users</strong></li>
+                  <li>Engineered Rendermind on Laravel + Alpine.js with Stripe billing; scaled concurrent AI inference
+                    pipelines for text-to-image, text-to-sketch, and text-to-video generation, reducing wait time by
+                    <strong>~35%</strong></li>
+                  <li>Developed Storyboards.com and Animatic Media using Nuxt.js; automated animatics cut manual video
+                    production time by <strong>60%</strong></li>
+                  <li>Optimized real-time event system using Socket.io, supporting <strong>500+ concurrent WebSocket
+                      connections</strong> with zero downtime</li>
+                  <li>Conducted code reviews for team members, enforcing coding standards and reducing post-deployment
+                    bugs by <strong>30%</strong></li>
+                </ul>
+              </div>
+              <div class="col-md-4 text-center mt-3 mt-md-0">
+                <div class="bg-light rounded-3 p-3">
+                  <i class="fas fa-briefcase fa-3x text-primary mb-2"></i>
+                  <p class="small text-muted mb-1">Current Position</p>
+                  <div class="mt-2">
+                    <span class="badge bg-light text-dark" style="font-size:11px">Laravel</span>
+                    <span class="badge bg-light text-dark" style="font-size:11px">Nuxt.js</span>
+                    <span class="badge bg-light text-dark" style="font-size:11px">fal.ai</span>
+                    <span class="badge bg-light text-dark" style="font-size:11px">Socket.io</span>
+                    <span class="badge bg-light text-dark" style="font-size:11px">Stripe</span>
                   </div>
                 </div>
               </div>
-              <p class="text-muted small mb-0">
-                <i class="fas fa-check-circle text-success me-2"></i>Focused on Software Engineering, Web Technologies, and Database Management
-              </p>
             </div>
           </div>
 
-          <!-- Diploma -->
-          <div class="col-md-6">
-            <div class="bg-white p-4 rounded-3 shadow-sm h-100" style="border-top: 4px solid #198754">
-              <div class="d-flex align-items-start mb-3">
-                <div class="bg-success bg-opacity-10 rounded-circle p-3 me-3">
-                  <i class="fas fa-certificate fa-2x text-success"></i>
-                </div>
-                <div class="flex-grow-1">
-                  <h5 class="mb-1 fw-bold">Diploma</h5>
-                  <p class="text-muted mb-2">Technical Education</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <span class="badge bg-success">2018 - 2021</span>
-                    <span class="badge bg-success">79%</span>
+          <!-- Ekana -->
+          <div class="exp-card past">
+            <div class="row align-items-start">
+              <div class="col-md-8">
+                <h5 class="mb-1 fw-bold">Software Engineer</h5>
+                <h6 class="text-primary mb-2">Ekana Technologies, Lucknow</h6>
+                <p class="text-muted mb-3"><i class="fas fa-calendar-alt me-2"></i>September 2023 – June 2024
+                  &nbsp;·&nbsp; 10 months</p>
+                <ul class="mb-0">
+                  <li>Delivered <strong>6+ production applications</strong> across creator platforms, healthcare
+                    marketplaces, logistics, and B2B back-office tools</li>
+                  <li>Built Jaaspire (jaaspire.com), a Laravel + Alpine.js PWA with Stripe subscriptions and OneSignal
+                    push notifications — onboarded <strong>500+ creators within 3 months</strong></li>
+                  <li>Developed Innersoul (innersoul.in), integrating Agora RTC for live 1-to-1 therapy sessions,
+                    cutting manual booking overhead by <strong>70%</strong></li>
+                  <li>Architected REST APIs for Adambulette ambulance dispatch system, enabling real-time GPS tracking,
+                    reducing dispatch response time by <strong>25%</strong></li>
+                  <li>Mentored 2 junior developers on Laravel best practices and REST API design, improving team
+                    delivery speed by <strong>20%</strong></li>
+                </ul>
+              </div>
+              <div class="col-md-4 text-center mt-3 mt-md-0">
+                <div class="bg-light rounded-3 p-3">
+                  <i class="fas fa-code fa-3x text-secondary mb-2"></i>
+                  <p class="small text-muted mb-1">Previous Role</p>
+                  <div class="mt-2">
+                    <span class="badge bg-light text-dark" style="font-size:11px">Laravel</span>
+                    <span class="badge bg-light text-dark" style="font-size:11px">Vue.js</span>
+                    <span class="badge bg-light text-dark" style="font-size:11px">Agora RTC</span>
+                    <span class="badge bg-light text-dark" style="font-size:11px">Node.js</span>
                   </div>
                 </div>
               </div>
-              <p class="text-muted small mb-0">
-                <i class="fas fa-check-circle text-success me-2"></i>Developed foundational programming and technical skills
-              </p>
             </div>
           </div>
 
-          <!-- Intermediate -->
-          <div class="col-md-6">
-            <div class="bg-white p-4 rounded-3 shadow-sm h-100" style="border-top: 4px solid #ffc107">
-              <div class="d-flex align-items-start mb-3">
-                <div class="bg-warning bg-opacity-10 rounded-circle p-3 me-3">
-                  <i class="fas fa-book fa-2x text-warning"></i>
-                </div>
-                <div class="flex-grow-1">
-                  <h5 class="mb-1 fw-bold">Intermediate (12th)</h5>
-                  <p class="text-muted mb-2">Higher Secondary Education</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <span class="badge bg-warning text-dark">2016 - 2018</span>
-                    <span class="badge bg-warning text-dark">72%</span>
+          <!-- Hipster -->
+          <div class="exp-card past">
+            <div class="row align-items-start">
+              <div class="col-md-8">
+                <h5 class="mb-1 fw-bold">Laravel Developer</h5>
+                <h6 class="text-primary mb-2">Hipster Pvt. Ltd., Lucknow</h6>
+                <p class="text-muted mb-3"><i class="fas fa-calendar-alt me-2"></i>April 2022 – July 2023 &nbsp;·&nbsp;
+                  1 year 3 months</p>
+                <ul class="mb-0">
+                  <li>Developed Handprint (handprint.in), integrating Singpass API for government-grade secure identity
+                    verification</li>
+                  <li>Built and maintained SMS College ERP (smslucknow.ac.in) managing academic records, fees, and
+                    workflows for <strong>3,000+ students</strong></li>
+                  <li>Engineered REST APIs and push notification systems for Bxience (bxience.com) job portal using
+                    Laravel + Bootstrap</li>
+                  <li>Improved average page load time by <strong>20%</strong> across enterprise web applications through
+                    query optimization</li>
+                </ul>
+              </div>
+              <div class="col-md-4 text-center mt-3 mt-md-0">
+                <div class="bg-light rounded-3 p-3">
+                  <i class="fas fa-laptop-code fa-3x text-secondary mb-2"></i>
+                  <p class="small text-muted mb-1">Growth Phase</p>
+                  <div class="mt-2">
+                    <span class="badge bg-light text-dark" style="font-size:11px">Laravel</span>
+                    <span class="badge bg-light text-dark" style="font-size:11px">MySQL</span>
+                    <span class="badge bg-light text-dark" style="font-size:11px">Bootstrap</span>
+                    <span class="badge bg-light text-dark" style="font-size:11px">AJAX</span>
                   </div>
                 </div>
               </div>
-              <p class="text-muted small mb-0">
-                <i class="fas fa-check-circle text-success me-2"></i>Science stream with Mathematics and Computer Science
-              </p>
             </div>
           </div>
 
-          <!-- High School -->
-          <div class="col-md-6">
-            <div class="bg-white p-4 rounded-3 shadow-sm h-100" style="border-top: 4px solid #6c757d">
-              <div class="d-flex align-items-start mb-3">
-                <div class="bg-secondary bg-opacity-10 rounded-circle p-3 me-3">
-                  <i class="fas fa-school fa-2x text-secondary"></i>
-                </div>
-                <div class="flex-grow-1">
-                  <h5 class="mb-1 fw-bold">High School (10th)</h5>
-                  <p class="text-muted mb-2">Secondary Education</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <span class="badge bg-secondary">2015 - 2016</span>
-                    <span class="badge bg-secondary">81%</span>
+          <!-- Xipe -->
+          <div class="exp-card past">
+            <div class="row align-items-start">
+              <div class="col-md-8">
+                <h5 class="mb-1 fw-bold">PHP Developer Intern</h5>
+                <h6 class="text-primary mb-2">Xipe Tech Pvt. Ltd., Lucknow</h6>
+                <p class="text-muted mb-3"><i class="fas fa-calendar-alt me-2"></i>January 2022 – April 2022
+                  &nbsp;·&nbsp; 4 months</p>
+                <ul class="mb-0">
+                  <li>Contributed to Amazio, an Amazon-integrated marketplace platform supporting <strong>10,000+
+                      product listings</strong></li>
+                  <li>Developed REST APIs consumed by a React.js frontend; implemented catalog management and search
+                    functionality</li>
+                </ul>
+              </div>
+              <div class="col-md-4 text-center mt-3 mt-md-0">
+                <div class="bg-light rounded-3 p-3">
+                  <i class="fas fa-graduation-cap fa-3x text-secondary mb-2"></i>
+                  <p class="small text-muted mb-1">Started Journey</p>
+                  <div class="mt-2">
+                    <span class="badge bg-light text-dark" style="font-size:11px">PHP</span>
+                    <span class="badge bg-light text-dark" style="font-size:11px">React.js</span>
+                    <span class="badge bg-light text-dark" style="font-size:11px">MySQL</span>
                   </div>
                 </div>
               </div>
-              <p class="text-muted small mb-0">
-                <i class="fas fa-check-circle text-success me-2"></i>Strong foundation in core subjects and academic excellence
-              </p>
             </div>
           </div>
 
-        </div>
-
-        <!-- Education Timeline Visual -->
-        <div class="mt-5 p-4 rounded-3 bg-white shadow-sm">
-          <h5 class="mb-4 text-center"><i class="fas fa-timeline text-primary me-2"></i>Educational Journey</h5>
-          <div class="position-relative" style="padding: 20px 0">
-            <!-- Timeline line -->
-            <div style="position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: #e2e8f0; transform: translateX(-50%)"></div>
-            
+          <!-- Career Stats -->
+          <div class="mt-4 p-4 rounded-3"
+            style="background:linear-gradient(135deg,rgba(13,110,253,0.05),rgba(9,132,255,0.02))">
+            <h5 class="mb-3"><i class="fas fa-chart-line text-primary me-2"></i>Career Highlights</h5>
             <div class="row text-center">
-              <div class="col-3">
-                <div class="position-relative" style="z-index: 2">
-                  <div class="bg-secondary rounded-circle mx-auto mb-2" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center">
-                    <i class="fas fa-school fa-lg text-white"></i>
-                  </div>
-                  <h6 class="mb-1">High School</h6>
-                  <p class="small text-muted mb-0">2016</p>
-                  <p class="small fw-bold text-secondary mb-0">81%</p>
-                </div>
+              <div class="col-6 col-md-3 mb-3">
+                <h3 class="text-primary mb-1">4+</h3>
+                <p class="text-muted small mb-0">Years Experience</p>
               </div>
-              <div class="col-3">
-                <div class="position-relative" style="z-index: 2">
-                  <div class="bg-warning rounded-circle mx-auto mb-2" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center">
-                    <i class="fas fa-book fa-lg text-white"></i>
-                  </div>
-                  <h6 class="mb-1">Intermediate</h6>
-                  <p class="small text-muted mb-0">2018</p>
-                  <p class="small fw-bold text-warning mb-0">72%</p>
-                </div>
+              <div class="col-6 col-md-3 mb-3">
+                <h3 class="text-primary mb-1">4</h3>
+                <p class="text-muted small mb-0">Companies</p>
               </div>
-              <div class="col-3">
-                <div class="position-relative" style="z-index: 2">
-                  <div class="bg-success rounded-circle mx-auto mb-2" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center">
-                    <i class="fas fa-certificate fa-lg text-white"></i>
-                  </div>
-                  <h6 class="mb-1">Diploma</h6>
-                  <p class="small text-muted mb-0">2021</p>
-                  <p class="small fw-bold text-success mb-0">79%</p>
-                </div>
+              <div class="col-6 col-md-3 mb-3">
+                <h3 class="text-primary mb-1">25+</h3>
+                <p class="text-muted small mb-0">Projects Delivered</p>
               </div>
-              <div class="col-3">
-                <div class="position-relative" style="z-index: 2">
-                  <div class="bg-primary rounded-circle mx-auto mb-2" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center">
-                    <i class="fas fa-graduation-cap fa-lg text-white"></i>
-                  </div>
-                  <h6 class="mb-1">B.Tech</h6>
-                  <p class="small text-muted mb-0">2025</p>
-                  <p class="small fw-bold text-primary mb-0">7.9 CGPA</p>
-                </div>
+              <div class="col-6 col-md-3 mb-3">
+                <h3 class="text-primary mb-1">2K+</h3>
+                <p class="text-muted small mb-0">Users Served</p>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Certifications & Achievements -->
-        <div class="mt-4 p-4 rounded-3" style="background: linear-gradient(135deg, rgba(13,110,253,0.05), rgba(9,132,255,0.02))">
-          <h5 class="mb-3"><i class="fas fa-award text-primary me-2"></i>Key Achievements</h5>
-          <div class="row">
-            <div class="col-md-4 mb-3">
-              <div class="d-flex align-items-center">
-                <i class="fas fa-star text-warning fa-2x me-3"></i>
-                <div>
-                  <h6 class="mb-0">Academic Excellence</h6>
-                  <p class="small text-muted mb-0">Consistent performance throughout education</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <div class="d-flex align-items-center">
-                <i class="fas fa-code text-primary fa-2x me-3"></i>
-                <div>
-                  <h6 class="mb-0">Technical Focus</h6>
-                  <p class="small text-muted mb-0">Specialized in Computer Science</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <div class="d-flex align-items-center">
-                <i class="fas fa-trophy text-success fa-2x me-3"></i>
-                <div>
-                  <h6 class="mb-0">Professional Ready</h6>
-                  <p class="small text-muted mb-0">Strong theoretical foundation</p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="py-5">
-  <div class="container">
-    <h2 class="section-title text-center mb-4">Top Projects</h2>
-    <p class="text-muted text-center mb-5">A showcase of my work across different technologies and domains</p>
+  <!-- EDUCATION -->
+  <section id="education" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Education</h2>
+      <p class="text-muted text-center mb-5">Academic background and professional training</p>
 
-    <div class="row g-4">
-      <!-- Project 1 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card card-project p-3 h-100">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Rendermind AI</h5>
-            <p class="card-text text-muted">RenderMind is an AI-powered creative platform that transforms imagination into visuals — from Text-to-Sketch, Sketch-to-Color, and Text-to-Photo generation to Expression Changer and Text-to-Tight Color tools, making image creation, editing, and refinement easier than ever.</p>
-            <div class="mt-auto">
-              <div class="mb-2">
-                <span class="badge bg-light text-dark tech-badge">Laravel</span>
-                <span class="badge bg-light text-dark tech-badge">Socket.io</span>
-                <span class="badge bg-light text-dark tech-badge">Alpinejs</span>
-                <span class="badge bg-light text-dark tech-badge">Unity</span>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="row g-4">
+
+            <div class="col-md-6">
+              <div class="bg-white p-4 rounded-3 shadow-sm h-100" style="border-top:4px solid #0d6efd">
+                <div class="d-flex align-items-start mb-3">
+                  <div class="bg-primary bg-opacity-10 rounded-circle p-3 me-3">
+                    <i class="fas fa-graduation-cap fa-2x text-primary"></i>
+                  </div>
+                  <div class="flex-grow-1">
+                    <h5 class="mb-1 fw-bold">B.Tech — Computer Science & Engineering</h5>
+                    <p class="text-muted mb-1">Dr. MC Saxena Group of Engineering Colleges, Lucknow</p>
+                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-1">
+                      <span class="badge bg-primary">2022 – 2025 (Completed)</span>
+                      <span class="badge bg-success">CGPA: 7.29</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <a class="btn btn-sm btn-outline-primary" href="https://rendermind.storyboards.com/"><i class="fab fa-github me-1"></i> Live Demo</a>
+            </div>
+
+            <div class="col-md-6">
+              <div class="bg-white p-4 rounded-3 shadow-sm h-100" style="border-top:4px solid #198754">
+                <div class="d-flex align-items-start mb-3">
+                  <div class="bg-success bg-opacity-10 rounded-circle p-3 me-3">
+                    <i class="fas fa-certificate fa-2x text-success"></i>
+                  </div>
+                  <div class="flex-grow-1">
+                    <h5 class="mb-1 fw-bold">Diploma — Computer Science & Engineering</h5>
+                    <p class="text-muted mb-1">CSJM Govt. Polytechnic Akbarpur, Ambedkar Nagar</p>
+                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-1">
+                      <span class="badge bg-success">2018 – 2021</span>
+                      <span class="badge bg-success">79.25%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="bg-white p-4 rounded-3 shadow-sm h-100" style="border-top:4px solid #ffc107">
+                <div class="d-flex align-items-start mb-3">
+                  <div class="bg-warning bg-opacity-10 rounded-circle p-3 me-3">
+                    <i class="fas fa-book fa-2x text-warning"></i>
+                  </div>
+                  <div class="flex-grow-1">
+                    <h5 class="mb-1 fw-bold">Intermediate (12th)</h5>
+                    <p class="text-muted mb-1">Science stream — Mathematics & Computer Science</p>
+                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-1">
+                      <span class="badge bg-warning text-dark">2016 – 2018</span>
+                      <span class="badge bg-warning text-dark">72%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="bg-white p-4 rounded-3 shadow-sm h-100" style="border-top:4px solid #6c757d">
+                <div class="d-flex align-items-start mb-3">
+                  <div class="bg-secondary bg-opacity-10 rounded-circle p-3 me-3">
+                    <i class="fas fa-school fa-2x text-secondary"></i>
+                  </div>
+                  <div class="flex-grow-1">
+                    <h5 class="mb-1 fw-bold">High School (10th)</h5>
+                    <p class="text-muted mb-1">Secondary Education</p>
+                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-1">
+                      <span class="badge bg-secondary">2015 – 2016</span>
+                      <span class="badge bg-secondary">81%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Training -->
+          <div class="mt-4 p-4 rounded-3 bg-white shadow-sm">
+            <h5 class="mb-3"><i class="fas fa-chalkboard-teacher text-primary me-2"></i>Professional Training</h5>
+            <div class="d-flex align-items-start gap-3">
+              <div class="bg-primary bg-opacity-10 rounded-circle p-2 flex-shrink-0">
+                <i class="fab fa-python text-primary fa-lg"></i>
+              </div>
+              <div>
+                <h6 class="mb-1 fw-semibold">45-Day Intensive — Python with Django</h6>
+                <p class="text-muted small mb-0">Techpile Technology · 2023 · Built a full e-commerce website from
+                  scratch</p>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Project 2 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card card-project p-3 h-100">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Animatic Media</h5>
-            <p class="card-text text-muted">Animatic Media is a creative production company that specializes in transforming storyboards into dynamic, animated previews for films and advertisements.</p>
-            <div class="mt-auto">
-              <div class="mb-2">
-                <span class="badge bg-light text-dark tech-badge">Nuxt</span>
-                <span class="badge bg-light text-dark tech-badge">Stripe</span>
-                <span class="badge bg-light text-dark tech-badge">Laravel</span>
+  <!-- PROJECTS -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Notable Projects</h2>
+      <p class="text-muted text-center mb-5">Production-grade applications across AI, real-time, mobile, and enterprise
+        domains</p>
+
+      <div class="row g-4">
+
+        <!-- Rendermind -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-project p-3 h-100">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title mb-0">Rendermind</h5>
+                <span class="badge bg-primary" style="font-size:10px">AI Platform</span>
               </div>
-              <a class="btn btn-sm btn-outline-primary" href="https://www.animaticmedia.com/"><i class="fas fa-external-link-alt me-1"></i> Live Demo</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card card-project p-3 h-100">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Storyboards</h5>
-            <p class="card-text text-muted">Storyboards.com Pro Workspace is a customized
-              collaboration platform built specifically for
-              Illustration & animation projects.
-              Seamless communication tools that
-              puts the power of an entire art
-              studio in your pocket.</p>
-            <div class="mt-auto">
-              <div class="mb-2">
-                <span class="badge bg-light text-dark tech-badge">Reactjs</span>
-                <span class="badge bg-light text-dark tech-badge">Laravel</span>
-                <span class="badge bg-light text-dark tech-badge">Stripe</span>
-              </div>
-              <a class="btn btn-sm btn-outline-primary" href="https://www.storyboards.com/"><i class="fas fa-book me-1"></i> Live Demo</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 4 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card card-project p-3 h-100">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Amazio</h5>
-            <p class="card-text text-muted">We take pride in helping our clients shine online. The digital world comes with a variety of unique challenges, and we work with you to overcome them and build a stronger presence—one that helps you grow your company.</p>
+              <p class="card-text text-muted small">Multi-model AI inference platform for text-to-image, text-to-sketch,
+                expression change, and text-to-video generation. Chose fal.ai for low-latency GPU inference, reducing
+                cold-start time by 50%. Serves 2,000+ active users.</p>
               <div class="mt-auto">
-              <div class="mb-2">
-                <span class="badge bg-light text-dark tech-badge">WordPress</span>
-                <span class="badge bg-light text-dark tech-badge">PHP</span>
-                <span class="badge bg-light text-dark tech-badge">AWS</span>
-              </div>
-              <a class="btn btn-sm btn-outline-primary" href="https://amazio.com/"><i class="fas fa-eye me-1"></i> Live Demo</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 5 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card card-project p-3 h-100">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Handprint</h5>
-            <p class="card-text text-muted">Empowering the economy’s transition from extractive to regenerative.
-Enabling companies to become a part of the new regenerative economy by integrating planet-positive actions into business activities in a profitable and seamless way.</p>
-            <div class="mt-auto">
-              <div class="mb-2">
-                <span class="badge bg-light text-dark tech-badge">WordPress</span>
-                <span class="badge bg-light text-dark tech-badge">Shopify</span>
-                <span class="badge bg-light text-dark tech-badge">Laravel</span>
-                <span class="badge bg-light text-dark tech-badge">Stripe</span>
-              </div>
-              <a class="btn btn-sm btn-outline-primary" href="https://handprint.tech/"><i class="fas fa-play me-1"></i> Live Demo</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 6 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card card-project p-3 h-100">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Bxience</h5>
-            <p class="card-text text-muted">BXIENCE is a leading job board that attracts visitors monthly. Our primary focus is prioritizing job seekers by providing them free access to various services, including job search, resume posting, and company research.</p>
-            <div class="mt-auto">
-              <div class="mb-2">
-                <span class="badge bg-light text-dark tech-badge">Laravel</span>
-                <span class="badge bg-light text-dark tech-badge">Agora</span>
-                <span class="badge bg-light text-dark tech-badge">MySQL</span>
-              </div>
-              <a class="btn btn-sm btn-outline-primary" href="https://bxience.com/"><i class="fab fa-github me-1"></i> Live Demo</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 7 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card card-project p-3 h-100">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Jaazpire</h5>
-            <p class="card-text text-muted">Jaaspire, Social networking platform.It is total creative freedom. Enjoy privacy, expert support, and a censorship-free platform.</p>
-            <div class="mt-auto">
-              <div class="mb-2">
-                <span class="badge bg-light text-dark tech-badge">Laravel</span>
-                <span class="badge bg-light text-dark tech-badge">Agora</span>
-                <span class="badge bg-light text-dark tech-badge">OneSignal</span>
-                <span class="badge bg-light text-dark tech-badge">Alpinejs</span>
-                <span class="badge bg-light text-dark tech-badge">Stripe</span>
-                <span class="badge bg-light text-dark tech-badge">Instagram Story Upload features</span>
-                <span class="badge bg-light text-dark tech-badge">MySQL</span>
-              </div>
-              <a class="btn btn-sm btn-outline-primary" href="https://jaaspire.com/"><i class="fab fa-github me-1"></i> Live Demo</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 8 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card card-project p-3 h-100">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Innersoul</h5>
-            <p class="card-text text-muted">Innersoul providing holistic mental health therapy services.</p>
-            <div class="mt-auto">
-              <div class="mb-2">
-                <span class="badge bg-light text-dark tech-badge">Laravel</span>
-                <span class="badge bg-light text-dark tech-badge">Vuejs</span>
-                <span class="badge bg-light text-dark tech-badge">WebRTC</span>
-                <span class="badge bg-light text-dark tech-badge">OneSignal</span>
-                <span class="badge bg-light text-dark tech-badge">MySQL</span>
-              </div>
-              <a class="btn btn-sm btn-outline-primary" href="https://www.innersoul.in/"><i class="fab fa-github me-1"></i> Live Demo</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 9 -->
-      <div class="col-md-6 col-lg-4">
-        <div class="card card-project p-3 h-100">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Tam America</h5>
-            <p class="card-text text-muted">Tam america is news agency.Which is providing the your journey as you improve the efficiency, effectiveness, safety, resiliency and accessibility of public transportation systems to prepare for a new era of mobility. We value leadership, innovation and simplicity. </p>
-            <div class="mt-auto">
-              <div class="mb-2">
-                <span class="badge bg-light text-dark tech-badge">Laravel</span>
-                <span class="badge bg-light text-dark tech-badge">Vuejs</span>
-                <span class="badge bg-light text-dark tech-badge">WebRTC</span>
-                <span class="badge bg-light text-dark tech-badge">OneSignal</span>
-                <span class="badge bg-light text-dark tech-badge">MySQL</span>
-              </div>
-              <a class="btn btn-sm btn-outline-primary" href="https://tam-america.com/"><i class="fab fa-github me-1"></i> Live Demo</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="py-2 bg-light">
-  <div class="container">
-    <h2 class="section-title text-center mb-4">Get In Touch</h2>
-    <p class="text-muted text-center mb-5">Have a project in mind or want to discuss opportunities? I'd love to hear from you!</p>
-
-    <div class="row">
-      <div class="col-lg-7 mb-4">
-        <div class="bg-white p-4 rounded-3 shadow-sm">
-          <h5 class="mb-3">Send Me a Message</h5>
-          
-          <div class="alert alert-success" id="successMessage">
-            <i class="fas fa-check-circle me-2"></i> Thank you! Your message has been sent successfully.
-          </div>
-
-          <form id="contactForm">
-            <div class="row">
-              <div class="col-md-6 mb-3">
-                <label class="form-label">Your Name <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" id="name" placeholder="John Doe" required>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label class="form-label">Your Email <span class="text-danger">*</span></label>
-                <input type="email" class="form-control" id="email" placeholder="john@example.com" required>
+                <div class="mb-2">
+                  <span class="badge bg-light text-dark tech-badge">Laravel</span>
+                  <span class="badge bg-light text-dark tech-badge">Alpine.js</span>
+                  <span class="badge bg-light text-dark tech-badge">Stripe</span>
+                  <span class="badge bg-light text-dark tech-badge">fal.ai</span>
+                  <span class="badge bg-light text-dark tech-badge">Gemini Flash</span>
+                </div>
+                <a class="btn btn-sm btn-outline-primary" href="https://rendermind.storyboards.com/" target="_blank"><i
+                    class="fas fa-external-link-alt me-1"></i>Live Demo</a>
               </div>
             </div>
-            
-            <div class="mb-3">
-              <label class="form-label">Subject <span class="text-danger">*</span></label>
-              <input type="text" class="form-control" id="subject" placeholder="Project Inquiry" required>
+          </div>
+        </div>
+
+        <!-- Storyboards -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-project p-3 h-100">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title mb-0">Storyboards</h5>
+                <span class="badge bg-primary" style="font-size:10px">AI Platform</span>
+              </div>
+              <p class="card-text text-muted small">Platform for automated animatics and social media content
+                generation. Integrated Renderlux video workflows and AI photomatics — cut manual production effort by
+                60% for marketing teams.</p>
+              <div class="mt-auto">
+                <div class="mb-2">
+                  <span class="badge bg-light text-dark tech-badge">Nuxt.js</span>
+                  <span class="badge bg-light text-dark tech-badge">Laravel</span>
+                  <span class="badge bg-light text-dark tech-badge">fal.ai</span>
+                  <span class="badge bg-light text-dark tech-badge">Gemini Flash</span>
+                  <span class="badge bg-light text-dark tech-badge">Stripe</span>
+                </div>
+                <a class="btn btn-sm btn-outline-primary" href="https://www.storyboards.com/" target="_blank"><i
+                    class="fas fa-external-link-alt me-1"></i>Live Demo</a>
+              </div>
             </div>
-            
-            <div class="mb-3">
-              <label class="form-label">Message <span class="text-danger">*</span></label>
-              <textarea class="form-control" id="message" rows="6" placeholder="Tell me about your project or inquiry..." required></textarea>
+          </div>
+        </div>
+
+        <!-- Animatic Media -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-project p-3 h-100">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title mb-0">Animatic Media</h5>
+                <span class="badge bg-primary" style="font-size:10px">AI Platform</span>
+              </div>
+              <p class="card-text text-muted small">Platform for AI-powered animatics and automated video content for
+                marketing campaigns. Queue-based concurrent rendering architecture enabled 3× throughput vs. synchronous
+                approach.</p>
+              <div class="mt-auto">
+                <div class="mb-2">
+                  <span class="badge bg-light text-dark tech-badge">Nuxt.js</span>
+                  <span class="badge bg-light text-dark tech-badge">Laravel</span>
+                  <span class="badge bg-light text-dark tech-badge">fal.ai</span>
+                  <span class="badge bg-light text-dark tech-badge">Stripe</span>
+                </div>
+                <a class="btn btn-sm btn-outline-primary" href="https://www.animaticmedia.com/" target="_blank"><i
+                    class="fas fa-external-link-alt me-1"></i>Live Demo</a>
+              </div>
             </div>
-
-            <button type="submit" class="btn btn-primary btn-lg w-100">
-              <i class="fas fa-paper-plane me-2"></i> Send Message
-            </button>
-          </form>
-        </div>
-      </div>
-
-      <div class="col-lg-5">
-        <div class="contact-info-card mb-4">
-          <h5 class="mb-4"><i class="fas fa-address-card me-2"></i>Contact Information</h5>
-          
-          <div class="mb-1">
-            <h6 class="mb-2"><i class="fas fa-envelope me-2"></i>Email : <a href="mailto:amitrajbhar04042001@gmail.com">amitrajbhar04042001@gmail.com</a></h6>
-          </div>
-
-          <div class="mb-1">
-            <h6 class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>Location : Lucknow, Uttar Pradesh, India</h6>
-          </div>
-
-          <div class="mb-1">
-            <p class="mb-1">
-              <a href="https://github.com/Amitrajbhargithub" target="_blank" class="text-white">
-                <i class="fab fa-github me-2"></i>GitHub Profile
-              </a>
-            </p>
-            <p class="mb-1">
-              
-              <a href="https://www.linkedin.com/in/amitrajbhar06" target="_blank" class="text-white">
-                <i class="fab fa-linkedin me-2"></i>LinkedIn Profile
-              </a>
-            </p>
-            <p class="mb-0">
-              <a href="./amit_rajbhar_4yrs.pdf" target="_blank" class="text-white">
-                <i class="fas fa-file-pdf me-2"></i>Download Resume
-              </a>
-            </p>
           </div>
         </div>
 
-        <div class="bg-white p-4 rounded-3 shadow-sm">
-          <h5 class="mb-3"><i class="fas fa-comments me-2 text-primary"></i>Why Work With Me?</h5>
-          <ul class="list-unstyled mb-0">
-            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Clean, maintainable code</li>
-            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Responsive communication</li>
-            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>On-time delivery</li>
-            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Post-launch support</li>
-            <li class="mb-0"><i class="fas fa-check-circle text-success me-2"></i>Flexible collaboration</li>
-          </ul>
+        <!-- Jaaspire -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-project p-3 h-100">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title mb-0">Jaaspire</h5>
+                <span class="badge bg-success" style="font-size:10px">Creator Platform</span>
+              </div>
+              <p class="card-text text-muted small">Creator subscription platform with content access control, Stripe
+                subscriptions, and PWA with offline support. Onboarded 500+ creators within 3 months of launch. Achieved
+                92/100 Lighthouse score.</p>
+              <div class="mt-auto">
+                <div class="mb-2">
+                  <span class="badge bg-light text-dark tech-badge">Laravel</span>
+                  <span class="badge bg-light text-dark tech-badge">Alpine.js</span>
+                  <span class="badge bg-light text-dark tech-badge">Stripe</span>
+                  <span class="badge bg-light text-dark tech-badge">OneSignal</span>
+                  <span class="badge bg-light text-dark tech-badge">PWA</span>
+                </div>
+                <a class="btn btn-sm btn-outline-primary" href="https://jaaspire.com/" target="_blank"><i
+                    class="fas fa-external-link-alt me-1"></i>Live Demo</a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<footer class="bg-white mt-5">
-  <div class="container">
-    <div class="row align-items-center py-4">
-      <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-        <p class="mb-0">&copy; <span id="year"></span> Amit Rajbhar. All rights reserved.</p>
-      </div>
-      <div class="col-md-6 text-center text-md-end">
-        <a class="btn btn-outline-secondary btn-sm me-2" href="https://www.linkedin.com/in/amitrajbhar06/" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a class="btn btn-outline-secondary btn-sm me-2" href="https://github.com/Amitrajbhargithub" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
+        <!-- Innersoul -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-project p-3 h-100">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title mb-0">Innersoul</h5>
+                <span class="badge bg-info text-dark" style="font-size:10px">HealthTech</span>
+              </div>
+              <p class="card-text text-muted small">Meditation and therapy marketplace with live 1-to-1 video sessions
+                via Agora RTC and Stripe billing. Reduced session setup latency to under 2 seconds. Cut manual booking
+                overhead by 70%.</p>
+              <div class="mt-auto">
+                <div class="mb-2">
+                  <span class="badge bg-light text-dark tech-badge">Laravel</span>
+                  <span class="badge bg-light text-dark tech-badge">Vue.js</span>
+                  <span class="badge bg-light text-dark tech-badge">Agora RTC</span>
+                  <span class="badge bg-light text-dark tech-badge">Stripe</span>
+                  <span class="badge bg-light text-dark tech-badge">WebRTC</span>
+                </div>
+                <a class="btn btn-sm btn-outline-primary" href="https://www.innersoul.in/" target="_blank"><i
+                    class="fas fa-external-link-alt me-1"></i>Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Aras Promotion -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-project p-3 h-100">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title mb-0">Aras Promotion</h5>
+                <span class="badge bg-warning text-dark" style="font-size:10px">Mobile App</span>
+              </div>
+              <p class="card-text text-muted small">Event management platform with PWA and native iOS/Android apps from
+                a single codebase using Ionic + Capacitor. Reduced release cycle time by 40% across 3 platforms
+                simultaneously.</p>
+              <div class="mt-auto">
+                <div class="mb-2">
+                  <span class="badge bg-light text-dark tech-badge">Laravel</span>
+                  <span class="badge bg-light text-dark tech-badge">Ionic</span>
+                  <span class="badge bg-light text-dark tech-badge">Capacitor</span>
+                  <span class="badge bg-light text-dark tech-badge">PWA</span>
+                </div>
+                <a class="btn btn-sm btn-outline-primary" href="https://aras.betaplanets.com/" target="_blank"><i
+                    class="fas fa-external-link-alt me-1"></i>Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SMS College ERP -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-project p-3 h-100">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title mb-0">SMS College ERP</h5>
+                <span class="badge bg-secondary" style="font-size:10px">Enterprise</span>
+              </div>
+              <p class="card-text text-muted small">Academic ERP managing 3,000+ students, staff schedules, timetables,
+                and fee workflows for a live institution. Optimized database queries, reducing report generation time
+                from 8s to under 1s.</p>
+              <div class="mt-auto">
+                <div class="mb-2">
+                  <span class="badge bg-light text-dark tech-badge">Laravel</span>
+                  <span class="badge bg-light text-dark tech-badge">MySQL</span>
+                  <span class="badge bg-light text-dark tech-badge">AJAX</span>
+                  <span class="badge bg-light text-dark tech-badge">Bootstrap</span>
+                </div>
+                <a class="btn btn-sm btn-outline-primary" href="https://smslucknow.ac.in/" target="_blank"><i
+                    class="fas fa-external-link-alt me-1"></i>Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ElineHR -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-project p-3 h-100">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title mb-0">ElineHR</h5>
+                <span class="badge bg-warning text-dark" style="font-size:10px">Mobile App</span>
+              </div>
+              <p class="card-text text-muted small">HR management and job portal with iOS & Android apps built using
+                Ionic and Capacitor. Real-time job alerts for 1,000+ registered candidates; notification delivery under
+                3 seconds.</p>
+              <div class="mt-auto">
+                <div class="mb-2">
+                  <span class="badge bg-light text-dark tech-badge">Laravel</span>
+                  <span class="badge bg-light text-dark tech-badge">Ionic</span>
+                  <span class="badge bg-light text-dark tech-badge">Capacitor</span>
+                  <span class="badge bg-light text-dark tech-badge">React Native</span>
+                </div>
+                <a class="btn btn-sm btn-outline-primary" href="https://elinehr.com/" target="_blank"><i
+                    class="fas fa-external-link-alt me-1"></i>Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bxience -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-project p-3 h-100">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title mb-0">Bxience</h5>
+                <span class="badge bg-secondary" style="font-size:10px">Job Portal</span>
+              </div>
+              <p class="card-text text-muted small">Job portal with REST API backend, job listings, application
+                workflows, and OneSignal push notifications. Dynamic frontend components integrated with a scalable
+                Laravel backend.</p>
+              <div class="mt-auto">
+                <div class="mb-2">
+                  <span class="badge bg-light text-dark tech-badge">Laravel</span>
+                  <span class="badge bg-light text-dark tech-badge">REST API</span>
+                  <span class="badge bg-light text-dark tech-badge">Bootstrap</span>
+                  <span class="badge bg-light text-dark tech-badge">OneSignal</span>
+                </div>
+                <a class="btn btn-sm btn-outline-primary" href="https://bxience.com/" target="_blank"><i
+                    class="fas fa-external-link-alt me-1"></i>Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-  </div>
-</footer>
+  </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  // Set current year
-  document.getElementById('year').textContent = new Date().getFullYear();
+  <!-- CONTACT -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Get In Touch</h2>
+      <p class="text-muted text-center mb-5">Open to full-time roles, freelance projects, and collaborations. Let's
+        build something great.</p>
 
-  // Contact form handling
-  document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Get form values
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
-    const projectType = document.getElementById('projectType').value;
-    const budget = document.getElementById('budget').value;
-    
-    // Build email body
-    let emailBody = `Name: ${name}\n`;
-    emailBody += `Email: ${email}\n`;
-    emailBody += `Subject: ${subject}\n\n`;
-    if (projectType) emailBody += `Project Type: ${projectType}\n`;
-    if (budget) emailBody += `Budget: ${budget}\n\n`;
-    emailBody += `Message:\n${message}`;
-    
-    // Create mailto link
-    const mailtoLink = `mailto:amitrajbhar04042001@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
-    
-    // Open email client
-    window.location.href = mailtoLink;
-    
-    // Show success message
-    document.getElementById('successMessage').style.display = 'block';
-    
-    // Reset form
-    this.reset();
-    
-    // Hide success message after 5 seconds
-    setTimeout(function() {
-      document.getElementById('successMessage').style.display = 'none';
-    }, 5000);
-  });
+      <div class="row">
+        <div class="col-lg-7 mb-4">
+          <div class="bg-white p-4 rounded-3 shadow-sm">
+            <h5 class="mb-3">Send Me a Message</h5>
+            <div class="alert alert-success" id="successMessage">
+              <i class="fas fa-check-circle me-2"></i>Thank you! Your message has been sent.
+            </div>
+            <form id="contactForm">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label class="form-label">Your Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="name" placeholder="John Doe" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label class="form-label">Your Email <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="john@example.com" required>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Subject <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="subject" placeholder="Project Inquiry" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Message <span class="text-danger">*</span></label>
+                <textarea class="form-control" id="message" rows="6"
+                  placeholder="Tell me about your project or opportunity..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg w-100">
+                <i class="fas fa-paper-plane me-2"></i>Send Message
+              </button>
+            </form>
+          </div>
+        </div>
 
-  // Smooth scrolling for navigation links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+        <div class="col-lg-5">
+          <div class="contact-info-card mb-4">
+            <h5 class="mb-4"><i class="fas fa-address-card me-2"></i>Contact Information</h5>
+            <div class="mb-2">
+              <h6 class="mb-1"><i class="fas fa-phone me-2"></i>+91 8960043475</h6>
+            </div>
+            <div class="mb-2">
+              <h6 class="mb-1"><i class="fas fa-envelope me-2"></i><a
+                  href="mailto:amitrajbhar040042001@gmail.com">amitrajbhar040042001@gmail.com</a></h6>
+            </div>
+            <div class="mb-2">
+              <h6 class="mb-1"><i class="fas fa-map-marker-alt me-2"></i>Lucknow, Uttar Pradesh, India</h6>
+            </div>
+            <hr style="border-color:rgba(255,255,255,0.3)">
+            <p class="mb-1"><a href="https://linkedin.com/in/amitrajbhar06" target="_blank" class="text-white"><i
+                  class="fab fa-linkedin me-2"></i>linkedin.com/in/amitrajbhar06</a></p>
+            <p class="mb-1"><a href="https://github.com/Amitrajbhargithub" target="_blank" class="text-white"><i
+                  class="fab fa-github me-2"></i>github.com/amitrajbhargithub</a></p>
+            <p class="mb-0"><a href="./amit_rajbhar_4yrs.pdf" target="_blank" class="text-white"><i
+                  class="fas fa-file-pdf me-2"></i>Download Resume</a></p>
+          </div>
+
+          <div class="bg-white p-4 rounded-3 shadow-sm">
+            <h5 class="mb-3"><i class="fas fa-comments me-2 text-primary"></i>Why Work With Me?</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>4+ years of production-grade
+                experience</li>
+              <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>End-to-end ownership — design to
+                deployment</li>
+              <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Clean, reviewed, maintainable code
+              </li>
+              <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>AI & real-time system expertise</li>
+              <li class="mb-0"><i class="fas fa-check-circle text-success me-2"></i>On-time delivery with post-launch
+                support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-white mt-5">
+    <div class="container">
+      <div class="row align-items-center py-4">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <p class="mb-0">&copy; <span id="year"></span> Amit Rajbhar. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a class="btn btn-outline-secondary btn-sm me-2" href="https://www.linkedin.com/in/amitrajbhar06/"
+            target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a class="btn btn-outline-secondary btn-sm" href="https://github.com/Amitrajbhargithub" target="_blank"><i
+              class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
       e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
-        
-        // Close mobile menu if open
-        const navbarCollapse = document.getElementById('navmenu');
-        if (navbarCollapse.classList.contains('show')) {
-          bootstrap.Collapse.getInstance(navbarCollapse).hide();
-        }
-      }
-    });
-  });
-
-  // Add active class to navigation on scroll
-  window.addEventListener('scroll', function() {
-    const sections = document.querySelectorAll('section[id], header[id]');
-    const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
-    
-    let current = '';
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
-      if (scrollY >= (sectionTop - 100)) {
-        current = section.getAttribute('id');
-      }
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+      let body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+      window.location.href = `mailto:amitrajbhar040042001@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      document.getElementById('successMessage').style.display = 'block';
+      this.reset();
+      setTimeout(() => { document.getElementById('successMessage').style.display = 'none'; }, 5000);
     });
 
-    navLinks.forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === `#${current}`) {
-        link.classList.add('active');
-      }
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          const nc = document.getElementById('navmenu');
+          if (nc.classList.contains('show')) bootstrap.Collapse.getInstance(nc).hide();
+        }
+      });
     });
-  });
 
-  /* Typewriter implementation */
-  (function() {
-    const el = document.getElementById('typewriter');
-    if (!el) return;
+    window.addEventListener('scroll', function () {
+      const sections = document.querySelectorAll('section[id], header[id]');
+      const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+      let current = '';
+      sections.forEach(s => { if (scrollY >= s.offsetTop - 100) current = s.getAttribute('id'); });
+      navLinks.forEach(l => {
+        l.classList.remove('active');
+        if (l.getAttribute('href') === `#${current}`) l.classList.add('active');
+      });
+    });
 
-    const phrases = [
-      'Amit Rajbhar',
-      'Full-stack Developer',
-      'Laravel • Node • Vue'
-    ];
-
-    let part = 0;
-    let partIndex = 0;
-    let intervalVal;
-    let typing = true;
-
-    function type() {
-      const text = phrases[part].substring(0, partIndex + (typing ? 1 : -1));
-      el.textContent = text;
-
-      if (typing) {
-        partIndex++;
-        if (partIndex === phrases[part].length) {
-          typing = false;
-          clearInterval(intervalVal);
-          setTimeout(() => { intervalVal = setInterval(type, 60); }, 1000);
-        }
-      } else {
-        partIndex--;
-        if (partIndex === 0) {
-          typing = true;
-          part = (part + 1) % phrases.length;
+    (function () {
+      const el = document.getElementById('typewriter');
+      if (!el) return;
+      const phrases = ['Amit Rajbhar', 'Full-Stack Engineer', 'Laravel · Node · Vue', 'AI & Real-Time Systems'];
+      let part = 0, partIndex = 0, typing = true, iv;
+      function type() {
+        el.textContent = phrases[part].substring(0, partIndex + (typing ? 1 : -1));
+        if (typing) {
+          partIndex++;
+          if (partIndex === phrases[part].length) {
+            typing = false;
+            clearInterval(iv);
+            setTimeout(() => { iv = setInterval(type, 60); }, 1200);
+          }
+        } else {
+          partIndex--;
+          if (partIndex === 0) { typing = true; part = (part + 1) % phrases.length; }
         }
       }
-    }
-
-    // start
-    intervalVal = setInterval(type, 60);
-  })();
-</script>
+      iv = setInterval(type, 60);
+    })();
+  </script>
 </body>
+
 </html>
